@@ -1,0 +1,14 @@
+# Parent configurations
+**/ParentConfigurations/*.cf
+**/ParentConfigurations/
+
+# External components
+**/Template.addin
+**/Template.bin
+
+# 1C binaries
+*.cf
+*.dt
+*.cfe
+*.epf
+*.erf

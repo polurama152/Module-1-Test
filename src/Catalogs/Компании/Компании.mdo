@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="12ff89c7-f708-4073-9e2b-3159813deeb3">
+  <producedTypes>
+    <objectType typeId="2cfeb24e-bf4b-4a4f-9048-9946b1ca3eb6" valueTypeId="0141ea65-4900-4b9d-b3b3-b3dfb9101658"/>
+    <refType typeId="8afdcafc-081d-48cf-8ba3-b5afbf5e41c3" valueTypeId="db8ddc6e-c4a9-42de-8724-1033b9a71710"/>
+    <selectionType typeId="743cc45b-fadc-40c5-a1da-144db2bec55f" valueTypeId="28518b97-347f-445b-ac1c-dc3d3016539f"/>
+    <listType typeId="f853978e-4d9c-4355-bdcd-060e50cf6ebf" valueTypeId="eef4e02c-d996-4faf-8439-4f1d364dad47"/>
+    <managerType typeId="b405e525-9973-4d20-b5b0-bd11f6fc8800" valueTypeId="c9df1d91-0e4c-4cca-8ff3-eb3aead28c01"/>
+  </producedTypes>
+  <name>Компании</name>
+  <synonym>
+    <key>ru</key>
+    <value>Компании</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Компании.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Компании.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Компании.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="cab99293-eff3-42e0-bdc8-707ed5dc2cdd">
+    <name>Город</name>
+    <synonym>
+      <key>ru</key>
+      <value>Город</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Города</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dc7564fa-b515-43ef-94d1-68888d6a6baa">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2d77087a-e4ac-450f-94aa-ea756656de12">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>
