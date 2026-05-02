@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac223034-8917-46bf-931f-fc1b94bd31a0">
+  <producedTypes>
+    <objectType typeId="4501ba7f-76a2-440c-b02d-73b628cf8825" valueTypeId="ca5b1252-87cc-4148-909d-ca5ccf58f498"/>
+    <refType typeId="95b9a231-8cc3-45ca-8841-245a5f7dc8a1" valueTypeId="3da891fd-0086-4896-9870-934461a95091"/>
+    <selectionType typeId="ed315751-a1b0-4c00-85b2-36e6154982ec" valueTypeId="1838e1e0-223d-4ca6-a1ca-fecbb100242a"/>
+    <listType typeId="fe9c95ea-5934-4d60-88e0-6105bf53aabb" valueTypeId="5ace5df7-0267-4b05-9fc8-569cbcd024cf"/>
+    <managerType typeId="3c534760-759d-40c3-8f9b-4cf65d5bf0b6" valueTypeId="3c1bc680-88b5-41f8-a6e8-4ad53483b681"/>
+  </producedTypes>
+  <name>Филиалы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Филиалы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Филиалы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Филиалы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="dc05243d-b6de-431c-a2d3-46bf63f626e5">
+    <name>Адрес</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

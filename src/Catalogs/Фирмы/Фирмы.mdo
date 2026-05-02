@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bffcbc1f-0ba6-4aa1-967d-62ceea5c8ab5">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cee7241b-32b4-4711-a50b-5e0b7fa98f9c">
   <producedTypes>
-    <objectType typeId="b93a28d7-4846-4e1a-875a-2b95b92ffddb" valueTypeId="a6cdc6f2-1f95-403b-88bc-be660457764d"/>
-    <refType typeId="b9c24dad-4b27-4e23-bba1-72e33f7702d6" valueTypeId="c3355159-ab25-444d-ac32-16152f6cff01"/>
-    <selectionType typeId="cbd4a12e-112b-46c1-b08a-f62963246dff" valueTypeId="73ff5bcc-bb9e-4bee-ab95-c09f79c0149d"/>
-    <listType typeId="2e42a9cd-f81c-43c0-85a6-9603f05f1a81" valueTypeId="98d8889e-4ec9-4bed-ae81-2f0f25cc8bc6"/>
-    <managerType typeId="53a35e62-9837-4287-8e68-0300a890a64d" valueTypeId="1ec023fa-79bd-469c-b839-f26583ad1e3e"/>
+    <objectType typeId="544c6b26-9dfc-40c9-9604-af9fd3a1fa75" valueTypeId="f4944369-277e-4ec1-add7-e9760a00b87f"/>
+    <refType typeId="1ce76f16-0c08-4676-9a6f-ed1f66d5fef6" valueTypeId="b33aced1-3dea-4f70-9c1f-287dfb125937"/>
+    <selectionType typeId="4e2de368-d22a-4bbc-9f82-5aa80723557e" valueTypeId="462e37f4-17ee-4918-8276-122d7244727a"/>
+    <listType typeId="9b8dc6b9-d751-450c-ab82-43036f085ee4" valueTypeId="286f940b-ae4d-47f6-ad82-0c7308b7ff04"/>
+    <managerType typeId="f7cb473e-de68-4de6-8233-74af05c29255" valueTypeId="9b3a79f1-7ed3-4e35-b017-af0299c6c82f"/>
   </producedTypes>
-  <name>Города</name>
+  <name>Фирмы</name>
   <synonym>
     <key>ru</key>
-    <value>Города</value>
+    <value>Фирмы</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Catalog.Города.StandardAttribute.Description</inputByString>
-  <inputByString>Catalog.Города.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Фирмы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Фирмы.StandardAttribute.Code</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
@@ -66,6 +66,10 @@
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория фирмы</value>
+    </synonym>
     <fillFromFillingValue>true</fillFromFillingValue>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
@@ -77,7 +81,7 @@
     <name>Description</name>
     <synonym>
       <key>ru</key>
-      <value>Город</value>
+      <value>Фирма</value>
     </synonym>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
@@ -94,13 +98,9 @@
     <maxValue xsi:type="core:UndefinedValue"/>
   </standardAttributes>
   <createOnInput>Use</createOnInput>
-  <help>
-    <pages>
-      <lang>ru</lang>
-    </pages>
-  </help>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>9</codeLength>
@@ -112,18 +112,11 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <defaultObjectForm>Catalog.Города.Form.ФормаЭлемента</defaultObjectForm>
-  <attributes uuid="4f4f3ef5-7e70-45df-a422-c67173bb2378">
-    <name>КодРегиона</name>
-    <synonym>
-      <key>ru</key>
-      <value>Код региона</value>
-    </synonym>
+  <defaultObjectForm>Catalog.Фирмы.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="60ad1f9b-a7d0-4d06-997b-e4b518ea6532">
+    <name>Город</name>
     <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>2</precision>
-      </numberQualifiers>
+      <types>CatalogRef.Города</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -131,7 +124,71 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="4f6a680b-29a8-44fe-8dfc-7e14cff8d461">
+  <tabularSections uuid="8d5df6fc-adfb-4015-b0dd-6edb7063ed7f">
+    <producedTypes>
+      <objectType typeId="7bfe9c59-f835-4901-8ff2-e98ddeb4d969" valueTypeId="478409bc-c14f-41b5-a6d9-6fcd11b98a02"/>
+      <rowType typeId="0243a741-b873-48fb-aa19-fd81d114f4d0" valueTypeId="bb463877-a6c4-4917-99f9-515bcc1f6f72"/>
+    </producedTypes>
+    <name>КонтактныеЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контактные лица</value>
+    </synonym>
+    <attributes uuid="39fbcf7a-9bce-4255-b2fb-aced4d787b3f">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="006077ff-090d-43ad-8adf-0aab609f490a">
+      <name>Должность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Должность</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>25</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="eaf18bc5-43c5-43d0-860d-7a30d946fd1f">
+      <name>Телефон</name>
+      <synonym>
+        <key>ru</key>
+        <value>Телефон</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>16</length>
+        </stringQualifiers>
+      </type>
+      <mask>+7(999)999-99-99</mask>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <lineNumberLength>9</lineNumberLength>
+  </tabularSections>
+  <forms uuid="148162dd-ded5-4561-80c1-ba89c9b215b4">
     <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>

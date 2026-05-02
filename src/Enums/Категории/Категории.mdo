@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="15a951c3-3403-4565-a51d-6e8d7b1256da">
+  <producedTypes>
+    <refType typeId="cf2d5c4e-e58f-4035-b7cd-0f3bf67c28e8" valueTypeId="ab33dccb-f1fc-45d1-bd89-9743daa2c6d9"/>
+    <listType typeId="f00710d4-a480-4415-8c87-8c49090bf8e0" valueTypeId="c3975dc9-7b89-415c-9ab9-f7f7e6fa25cb"/>
+    <managerType typeId="15705089-e7bf-4804-9dc8-fb9d55f8734d" valueTypeId="b1d75943-3f29-4118-b97d-b8df75d9cc49"/>
+  </producedTypes>
+  <name>Категории</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ceeb1859-7d08-40d4-8ba9-a1da3bc4d3da">
+    <name>МягкаяМебель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мягкая мебель</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ea575beb-d2c2-41d2-a75f-0bb3fb94d0ca">
+    <name>Кухни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кухни</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="fc266e26-6346-4888-9596-3ac6f84051c9">
+    <name>Прихожие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прихожие</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ffef3ee0-5a11-426c-bfb4-2494e22b48e5">
+    <name>Гостиные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гостиные</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="724b5e86-88d9-4cad-89bd-4be3bdf73a21">
+    <name>Спальни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спальни</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
