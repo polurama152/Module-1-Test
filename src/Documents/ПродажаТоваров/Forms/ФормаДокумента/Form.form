@@ -429,6 +429,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.ПереченьТоваров.Цена</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ПереченьТоваровЦенаПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ПереченьТоваровЦенаРасширеннаяПодсказка</name>
         <id>37</id>
@@ -471,6 +475,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.ПереченьТоваров.Количество</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ПереченьТоваровКоличествоПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ПереченьТоваровКоличествоРасширеннаяПодсказка</name>
         <id>40</id>
@@ -700,6 +708,10 @@
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
+    <handlers>
+      <event>OnWriteAtServer</event>
+      <name>ПриЗаписиНаСервере</name>
+    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>
